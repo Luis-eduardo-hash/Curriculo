@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+body{
+    background-color: rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+ul{
+    list-style: none;
+
+}
+main{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1rem;
+}
+
+.left{
+    background-color: #f0f0f0;
+    box-shadow: 0,0,10px #080808;
+    border-radius: 10px;
+}
+.foto{
+    position: relative;
+
+}
+.foto.img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.foto.h1{
+    position: absolute;
+    bottom: 1rem;
+    color: #f0f0f0;
+    width: 100%;
+    text-align: center;
+}
+i{
+    color: #080808;
+
+}
+.pessoais,.habilidades,.idiomas{
+    color: azure;
+    padding: 1rem;
+    line-height: 2rem;
+
+}
+.pessoais{
+    font-size: 1rem;
+
+}
+.progress{
+    width: 100%;
+    height: 1.8rem;
+
+}
+.sobre,.experiecias,.educacao{
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    box-shadow: 7px 7px 10px #080808;
+    border-radius: 10px;
+
+}
+.experiencias,.educação{
+    margin-top: 1.5rem 0;
+}
+.trabalho,.curso{
+    margin: 1.5rem 0;
+}
+.nome-trabalho,.nome-curso{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.trabalho,.educacao{
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.data{
+    color: #080808;
+}
+.atual{
+    background-color: #080808;
+    color: #f0f0f0;
+    padding: 0.1rem 1rem;
+    border-radius: 5px;
+
+}
+footer{
+    background-color: #080808;
+    color: #f0f0f0;
+    padding: 1.5rem;
+    
+}
+footer p{
+    color: #000000;
+
+}
+footer i{
+    margin-top: 0.5rem;
+    color: #f0f0f0;
+    font-size:32px;
+}
+a{
+    text-decoration:none;
+
+}
+@media( max-width; 880px){
+    main(
+    display: grid;
+    grid-template-columns: 1fr;
+    )
+}
