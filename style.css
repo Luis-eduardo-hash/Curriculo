@@ -62,24 +62,24 @@ i{
     height: 1.8rem;
 
 }
-.sobre,.experiecias,.educacao{
+.sobre, .experiecias, .educacao,.cursos{
     padding: 1.5rem;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     box-shadow: 7px 7px 10px #080808;
     border-radius: 10px;
 
 }
-.experiencias,.educação{
+.experiencias,.educação,.cursos{
     margin-top: 1.5rem 0;
 }
 .trabalho,.curso{
     margin: 1.5rem 0;
 }
-.nome-trabalho,.nome-curso{
+.nome-trabalho,.curso{
     font-size: 1.3rem;
     font-weight: bold;
 }
-.trabalho,.educacao{
+.trabalho,.educacao,.cursos{
     margin-top: 0.5rem;
     line-height: 1.5rem;
     text-align: justify;
@@ -96,7 +96,7 @@ i{
 }
 footer{
     background-color: #080808;
-    color: #f0f0f0;
+    color: #ffffff;
     padding: 1.5rem;
     
 }
@@ -116,6 +116,6 @@ a{
 @media( max-width; 880px){
     main(
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: ;
     )
 }
