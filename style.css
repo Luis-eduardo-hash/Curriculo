@@ -1,19 +1,29 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon:YROT@-5&display=swap');
+
+:root {
+    --base-color: #081b29;
+    --base-color: #00b7ff;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: rgb(15, 15, 15);
 }
-body{
+
+body {
     background-color: rgb(228, 228, 228);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Tilt Neon', serif;
     font-style: normal;
     font-size: 18px;
 }
-ul{
+
+ul {
     list-style: none;
 
 }
+
 main{
     margin: 1rem;
     display: grid;
@@ -21,75 +31,93 @@ main{
     grid-gap: 1rem;
 }
 
-.left{
-    background-color: #f0f0f0;
-    box-shadow: 0,0,10px #080808;
+.left {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #000000;
     border-radius: 10px;
 }
-.foto{
+.foto {
     position: relative;
 
 }
-.foto.img{
+.foto img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
 }
-.foto.h1{
+.foto h1 {
     position: absolute;
-    bottom: 1rem;
+    bottom: 1.2rem;
     color: #f0f0f0;
     width: 100%;
     text-align: center;
-}
-i{
-    color: #080808;
+    font-size: 22px;
 
 }
-.pessoais,.habilidades,.idiomas{
-    color: azure;
+i {
+    color: #000000;
+
+}
+.pessoais, .habilidades, .idiomas {
+    color: rgb(8, 41, 228);
     padding: 1rem;
     line-height: 2rem;
 
-}
-.pessoais{
-    font-size: 1rem;
+} 
+.pessoais {
+    font-size: 1.1rem;
 
 }
+.pessoais ul li {
+    display: flex;
+    align-items: center;
+}
+
+.pessoais ul li i {
+    margin-right: 5px;
+}
+
 .progress{
     width: 100%;
     height: 1.8rem;
 
 }
-.sobre, .experiecias, .educacao,.cursos{
+.sobre, .experiencias, .educacao {
     padding: 1.5rem;
-    background-color: #ffffff;
-    box-shadow: 7px 7px 10px #080808;
+    background-color: #f0f0f0;
+    box-shadow: 7px 7px 10px #000000;
     border-radius: 10px;
+}
+.sobre p{
+    margin-top: 1rem;
 
 }
-.experiencias,.educação,.cursos{
-    margin-top: 1.5rem 0;
+
+.experiencias,.educacao {
+    margin-top: 1rem;
 }
-.trabalho,.curso{
+
+.trabalho,.curso {
     margin: 1.5rem 0;
 }
-.nome-trabalho,.curso{
+
+.nome-trabalho, .nome-curso {
     font-size: 1.3rem;
     font-weight: bold;
 }
-.trabalho,.educacao,.cursos{
+
+.trabalho p, .educacao p {
     margin-top: 0.5rem;
     line-height: 1.5rem;
     text-align: justify;
 }
 .data{
-    color: #080808;
+    color: #000000;
 }
 .atual{
-    background-color: #080808;
-    color: #f0f0f0;
+    background-color: #00978b;
+    color: #f3f3f3;
     padding: 0.1rem 1rem;
     border-radius: 5px;
 
@@ -97,25 +125,31 @@ i{
 footer{
     background-color: #080808;
     color: #ffffff;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    line-height: 1.5rem;
     
 }
 footer p{
-    color: #000000;
+    color: #fffdfd;
 
 }
 footer i{
     margin-top: 0.5rem;
-    color: #f0f0f0;
-    font-size:32px;
+    color: white;
+    font-size: 32px;
 }
 a{
     text-decoration:none;
 
 }
-@media( max-width; 880px){
-    main(
+h2, h2 i,
+h3, h3 i {
+    color:rgb(0, 119, 255)
+}
+@media (max-width: 880px){
+    main{
     display: grid;
-    grid-template-columns: ;
-    )
+    grid-template-columns: 1fr;
+}
 }
